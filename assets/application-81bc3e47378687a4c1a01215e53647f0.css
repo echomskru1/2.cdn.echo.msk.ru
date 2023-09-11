@@ -1,0 +1,436 @@
+/* Tabs
+----------------------------------*/
+
+.ui-tabs { zoom: 1; }
+.ui-tabs .ui-tabs-nav {
+    list-style: none;
+    position: relative;
+    margin: 0px 0px;
+    background-color: #eee ;
+}
+.ui-tabs .ui-tabs-nav li {
+    position: relative;
+    float: left;
+    border: 1px solid #888 ;
+    border-bottom-width: 0 !important;
+    margin: 0 .0em -1px .5em ;
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    text-decoration: none;
+    padding: 0px 0.5em
+}
+.ui-tabs .ui-tabs-nav li a:focus { outline: none }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    border: 1px solid #888 ;
+    background-color: #fff ;
+    padding-bottom: 1px;
+    border-bottom-width: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+    clear: both ;
+    display: block;
+    border-top: 1px solid #888 ;
+    background: none;
+}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+body {
+    font-size: 81.251% ;
+    padding-top: 0.25em ;
+}
+
+div.container {
+    width: auto ;
+    padding: 0px 2em ;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: serif ; }
+
+table.list, table.one {
+    border-collapse: collapse ;
+    border: 1px solid #888 ;
+    width: auto ;
+}
+
+table.one {
+    width: 90% ;
+}
+
+table.list th, table.one th, table.list td, table.one td {
+    border: 1px solid #888 ;
+    padding: 0.3em 0.5em ;
+    vertical-align: middle ;
+}
+
+table.list img, table.one img {
+    float: left;
+}
+
+table.list th, table.one th, table.list tr.head {
+    background-color: #955 ;
+    color: #fff ;
+    text-align: center ;
+}
+
+table.form th { width: 10% }
+
+table.list th abbr,
+table.one th abbr,
+table.list tr.head abbr,
+table.list th acronym,
+table.one th acronym,
+table.list tr.head acronym {
+    border-color: #fff ;
+}
+
+table.list tr.even {
+    background-color: #eee ;
+}
+
+table.one tr td { background-color: #fff }
+
+div.pagination {
+    margin: 0.5em 0.3em ;
+}
+
+div.pagination span.current {
+    font-weight: bold ;
+}
+
+h1.breadcrumb {
+    font-size:1.2em;
+    line-height:1.25;
+    padding: 0.3em ;
+    margin-bottom:1.25em;
+    border: 1px solid #888 ;
+    background-color: #eee ;
+}
+
+h1.breadcrumb a:hover {
+    color: #00f;
+}
+
+input.short {
+    width: auto ;
+    margin: 0px 0px ;
+    padding: 0px 0px ;
+}
+
+select.short { width: auto ; }
+
+textarea.mini { height: auto ; }
+
+div.fieldWithErrors label { font-style: italic ; }
+div.fieldWithErrors input,
+div.fieldWithErrors select,
+div.fieldWithErrors textarea {
+    border: 2px solid red ;
+}
+
+div.errorExplanation, div.errorExplanation h2 { color: red ; }
+
+span.datetime-select select { width: auto ; }
+
+table.list th a, table.one th a { color: #fff ; }
+
+.strong { font-weight: bold ; }
+
+ul.menu {
+    list-style: none ;
+    height: 1.5em ;
+    margin: 0px 0px ;
+    padding: 2px 0px ;
+}
+
+ul.menu a {
+    font-weight: bold ;
+    text-decoration: none ;
+    display: block ;
+    border-left: 1px solid #ccc ;
+    padding: 0px 0.75em ;
+}
+
+ul.menu a.more:after {
+    content: " ..."
+}
+
+ul.menu a.current {
+    color: #000 ;
+    text-decoration: underline ;
+}
+
+ul.menu a.disabled {
+    color: #888 ;
+}
+
+ul.menu a:hover { text-decoration: underline ; }
+
+ul.menu li {
+    list-style: none ;
+    float: left ;
+    clear: none ;
+}
+
+ul.menu li ul {
+    position: absolute ;
+    background-color: #fff ;
+    border: 1px solid #ccc ;
+    border-top-width: 0px ;
+    padding: 3px 0px ;
+    visibility: hidden ;
+}
+
+ul.menu li ul li {
+    list-style: none ;
+    float: none ;
+    clear: both ;
+}
+
+ul.menu li:hover ul {
+    visibility: visible ;
+    z-index: 10 ;
+}
+
+ul.menu li ul li a {
+    border-left: 0px solid red ;
+    border-top: 1px solid #ccc ;
+}
+
+div.logged {
+    float: right ;
+    padding: 2px 3px ;
+}
+
+div.logged div, div.logged form { display: inline ; }
+div.logged input{ width: 7em ; }
+
+a.user { font-weight: bold ; }
+
+.progress { background: url(../i/progress.gif) repeat-x ; }
+
+.nobr { white-space: nowrap ; }
+
+ul.topics {
+    font-weight: bold ;
+}
+
+ul.topics .inner a {
+    font-weight: normal ;
+}
+
+div.asset-file {
+    text-align: center ;
+    float: left ;
+    clear: both ;
+}
+div.asset-file img {
+    float: left ;
+    margin: 0px 0.2em 0.2em 0px ;
+}
+
+div.asset-file a img {
+    border: 1px solid blue ;
+}
+
+textarea {
+    width: 98% ;
+    height: 8em ;
+}
+input.long {
+    width: 95% ;
+}
+input.charcount {
+    width: 80% ;
+}
+span.charcount {
+  display: none;
+  margin-left: 1em;
+}
+
+div#basket {
+    position: absolute ;
+    /* top: 3em ; */
+    right: 2em ;
+    border: 1px solid #888 ;
+    background-color: #fff ;
+}
+
+div#basket div.content {
+    width: 20em ;
+}
+
+div.ui-tabs-panel {
+    padding: 1em 0px ;
+}
+
+div.tab-set .ui-tabs-nav li {
+    background-color: #eee ;
+    padding: 0.2em 0.5em 0px ;
+    margin-left: 1em ;
+}
+
+div#basket div.content div.ui-tabs-panel {
+    overflow: auto ;
+    height: 20em ;
+    padding: 0.5em 0.5em ;
+}
+
+div#basket div.summary {
+    background-color: #eee ;
+    padding: 0px 0.5em 0.5em ;
+    text-align: right ;
+}
+
+div#basket div.basket {
+    clear: both ;
+    margin: 0.2em 0px ;
+    border-bottom: 1px dotted #888 ;
+}
+
+div#basket div.basket img {
+    float: right ;
+}
+
+a.element img {
+    display: inline ;
+    float: none ;
+    vertical-align: baseline ;
+}
+
+a.unpublished {
+    color: #555 ;
+}
+
+div#basket div.basket a.element img {
+    float: none ;
+}
+
+div.block-box {
+    padding: 1.5em ;
+    border: 1px solid #aaa ;
+}
+
+a.reset-prio {
+    display: block ;
+    float: left ;
+    margin-right: 2em ;
+}
+
+form.blocks-index th input.submit {
+    float: right ;
+    padding: 0px 0px ;
+    margin-left: 2em ;
+}
+
+textarea.title { height:  3em }
+textarea.body  { height: 32em }
+
+input.date { width: 16em }
+
+fieldset.asset img.asset {
+    float: left ;
+    margin: 0px 1em 1em 0px ;
+}
+
+fieldset.asset a:link img.asset {
+    border: 1px solid #ccc ;
+}
+
+.ui-autocomplete {
+    border: 1px solid #ccc ;
+}
+
+.ui-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+        background-color: #eee ;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+        background-color: #ddd ;
+}
+
+.ui-state-active#basket,
+.ui-state-active#assocs-widget { border: 2px solid #444 ; }
+.ui-state-hover#basket,
+.ui-state-hover#assocs-widget { border: 2px solid #0f0 ; }
+
+#basket .content .to-assoc { font-weight: bold }
+
+#assocs-widget {
+    padding: 1em 1em 1em 2em ;
+    border: 1px solid #ccc ;
+}
+
+#assocs-widget li { white-space: nowrap ; }
+
+fieldset.asset div.one {
+    padding: 1em 1em ;
+    margin-bottom: 1em ;
+    border: 1px solid #888 ;
+}
+
+ul.menu li.search form {
+    border-left: 1px solid #ccc ;
+    display: inline ;
+    padding-left: 1em ;
+}
+
+table.schedules tr.section td {
+    background-color: #baa ;
+}
+
+.placeholder { color: #CCC; }
+
+.edit_entry #entry_submit { float: left; }
+.entry_destroy { margin-left:10em; }
+
+table#assocs-widget tbody tr.loud td {
+    font-weight: bold ;
+}
+
+.green { color: #00CC00; }
+.yellow { color: #CCCC00; }
+.red { color: red; }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+ *  require_tree .
+ */
+
